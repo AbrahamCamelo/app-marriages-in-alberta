@@ -48,7 +48,7 @@ total_newborns = newborns.loc[(newborns.GEO == 'Alberta, place of residence of m
 
 total_newborns_chart = (
     alt.Chart(total_newborns
-            , title=f"Average Age of First Marriage"
+            , title=f"Number of Newborns"
             )
     .mark_line(color="green")
     .encode(
