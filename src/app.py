@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 import os
 
-st.write(os.listdir())
+st.write(os.listdir('data'))
 
 
 st.title('Marriages in Alberta, Canada')
