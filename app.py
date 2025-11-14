@@ -66,7 +66,7 @@ combined = alt.layer(
     annual_marriages_chart
 ).resolve_scale(
     y='independent'
-)
+).properties(width=600, height=400)
 
 st.altair_chart(combined, use_container_width=True)
 st.write('The number of marriages in Alberta has increased over the years. However, there was a sharp drop in 2020, probably due to the pandemic.')
