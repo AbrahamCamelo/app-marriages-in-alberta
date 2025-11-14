@@ -23,7 +23,7 @@ annual_marriages_chart = (
     .mark_line(color='red')
     .encode(
         x=alt.X("Calendar Year:O", title="Calendar Year"),
-        y=alt.Y("Total:Q", title="Total Marriages", titleColor='red'),
+        y=alt.Y("Total:Q", title="Total Marriages", color='red'),
     )
     .properties(
         title="First Marriages per Year",
@@ -53,7 +53,7 @@ total_newborns_chart = (
     .mark_line(color="green")
     .encode(
         x=alt.X("REF_DATE:O", title="Year"),
-        y=alt.Y("VALUE:Q", title="Total Newborns", titleColor='green')
+        y=alt.Y("VALUE:Q", title="Total Newborns", color='green')
     ).interactive()
 )
 
