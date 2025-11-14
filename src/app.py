@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import os
+
+st.write(os.listdir())
+
 
 st.title('Marriages in Alberta, Canada')
 st.write('This file display the trend of marriages in Alberta, Canada. Particularly,\
