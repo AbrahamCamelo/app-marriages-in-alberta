@@ -57,9 +57,9 @@ total_newborns_chart = (
     ).interactive()
 )
 
-#st.altair_chart(total_newborns_chart, use_container_width=True)
 
 st.altair_chart(annual_marriages_chart, use_container_width=True)
+st.altair_chart(total_newborns_chart, use_container_width=True)
 
 combined = alt.layer(
     total_newborns_chart,
