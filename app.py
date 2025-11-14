@@ -1,9 +1,8 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
-import os
+from pathlib import Path
 
-st.write(os.listdir('.'))
 
 
 st.title('Marriages in Alberta, Canada')
@@ -11,7 +10,7 @@ st.write('This file display the trend of marriages in Alberta, Canada. Particula
          those that count as first mattiages for both parties.\n' \
          'The data was taken from https://open.canada.ca/en')
 
-marriages = pd.read_excel(r'data\marriage-first-marriages-age-of-groom-by-age-of-bride.xlsx', skiprows=2) 
+marriages = pd.read_excel(Path('data/marriage-first-marriages-age-of-groom-by-age-of-bride.xlsx'), skiprows=2) 
 st.write(marriages.head())
 
 
