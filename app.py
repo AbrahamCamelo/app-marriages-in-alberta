@@ -36,7 +36,7 @@ annual_marriages_chart = (
 
 ## Number of Newborns
 
-newborns = pd.read_csv(Path(r'data\13100415.csv') )
+newborns = pd.read_csv(Path('data/13100415.csv') )
 
 total_newborns = newborns.loc[(newborns.GEO == 'Alberta, place of residence of mother') 
          & (newborns.UOM == 'Number')
