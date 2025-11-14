@@ -23,7 +23,7 @@ annual_marriages_chart = (
     .mark_line(color='red')
     .encode(
         x=alt.X("Calendar Year:O", title="Calendar Year"),
-        y=alt.Y("Total:Q", title="Total Marriages", color='red'),
+        y=alt.Y("Total:Q", title="Total Marriages (red)"),
     )
     .properties(
         title="First Marriages per Year",
@@ -48,12 +48,12 @@ total_newborns = newborns.loc[(newborns.GEO == 'Alberta, place of residence of m
 
 total_newborns_chart = (
     alt.Chart(total_newborns
-            , title=f"Number of Newborns"
+            , title=f"Number of Newborns and First Marriages"
             )
     .mark_line(color="green")
     .encode(
         x=alt.X("REF_DATE:O", title="Year"),
-        y=alt.Y("VALUE:Q", title="Total Newborns", color='green')
+        y=alt.Y("VALUE:Q", title="Total Newborns (green)")
     ).interactive()
 )
 
